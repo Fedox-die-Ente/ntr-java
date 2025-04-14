@@ -103,6 +103,10 @@ try {
 }
 ```
 
+### Another Usage
+
+Another Usage is available at [this file](https://github.com/Fedox-die-Ente/ntr-java/blob/master/src/main/java/ovh/fedox/ntr/example/Example.java)
+
 ## NTR File Format
 
 NTR is a hierarchical key-value file format with the following features:
