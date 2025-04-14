@@ -61,18 +61,6 @@ publishing {
             }
         }
     }
-
-    // For GitHub Packages
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Fedox-die-Ente/ntr-java")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
-            }
-        }
-    }
 }
 
 signing {

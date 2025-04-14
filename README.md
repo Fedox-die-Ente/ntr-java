@@ -17,14 +17,31 @@ A Java library for parsing NTR files, a hierarchical key-value file format.
 ### Maven
 
 ```xml
-<dependency>
-</dependency>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.Fedox-die-Ente</groupId>
+        <artifactId>ntr-java</artifactId>
+        <version>v1.0.0</version>
+    </dependency>
+</dependencies>
 ```
 
 ### Gradle
 
 ```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
+    implementation 'com.github.Fedox-die-Ente:ntr-java:v1.0.0'
 }
 ```
 
