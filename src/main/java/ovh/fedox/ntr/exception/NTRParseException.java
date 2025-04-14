@@ -1,12 +1,26 @@
 package ovh.fedox.ntr.exception;
 
-
 /**
- * NTRParseException.java - 
- * 
- * Created on 4/14/2025 at 5:23 AM by Fedox.
- * Copyright © 2025 Fedox. All rights reserved.
+ * Exception thrown when there is an error parsing an NTR file.
  */
- 
-public class NTRParseException {
+public class NTRParseException extends Exception {
+
+	/**
+	 * Creates a new NTR parse exception.
+	 *
+	 * @param message The error message
+	 */
+	public NTRParseException(String message) {
+		super(message);
+	}
+
+	/**
+	 * Creates a new NTR parse exception.
+	 *
+	 * @param message The error message
+	 * @param cause The cause of the exception
+	 */
+	public NTRParseException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }
