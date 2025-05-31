@@ -118,9 +118,9 @@ public class NTRParser {
 
 				try {
 					if (line.contains(">")) {
-						String[] parts = line.split(">");
-						String key = parts[0].trim();
-						String value = parts.length > 1 ? parts[1].trim() : "";
+						int splitIndex = line.indexOf(">");
+						String key = line.substring(0, splitIndex).trim();
+						String value = splitIndex < line.length() - 1 ? line.substring(splitIndex + 1).trim() : "";
 
 						currentNode = processKeyValueNode(key, value, indentation, prevIndentation,
 								currentNode, nodeStack);
