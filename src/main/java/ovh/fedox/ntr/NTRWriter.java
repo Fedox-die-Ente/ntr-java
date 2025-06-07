@@ -24,7 +24,7 @@ import java.util.logging.Logger;
  */
 public class NTRWriter {
 	private static final Logger LOGGER = Logger.getLogger(NTRWriter.class.getName());
-	private static final String INDENT = "  ";
+	private static final String INDENT = "	";
 
 	private final Map<String, NTRNode> rootNodes;
 	private String comment;
